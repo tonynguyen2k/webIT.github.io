@@ -1,0 +1,104 @@
+html {
+    background-color: aqua;
+}
+#Container{
+    background-color: white;
+    margin: 2px 30px;
+}
+#logo {
+    margin: -24px 536px;
+    width: 230px;
+    padding: 52px 16px;
+    height: auto;
+}
+#menu {
+    background-color: black;
+    margin: 18px 0px;
+    padding: 14px 20px;
+}
+
+
+#mota > h1 {
+    margin: 4px 422px;
+}
+#mota > h2 {
+    text-transform: uppercase;
+    margin: 23px 300px;
+}
+#mota > h4 {
+    margin-left: 234px;
+}
+#footer {
+    margin: 299px 0px;
+    background-color: black;
+}
+#footer > h4 {
+    padding: 18px;
+    color: white;
+    margin: 0px 488px;
+}
+
+
+.page1 {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0px 48px;
+    margin-left: 28px;
+}
+.page11{
+    background-color: white;
+    color:black;
+    padding: 46px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.page2{
+    margin-left: 58px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.page22{
+    background-color: white;
+    color:black;
+    padding: 16px 45px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#form{
+    margin: 0px 58px;
+}
+#name { 
+    margin: 13px 97px;
+}
+#age { 
+    margin: 13px 114px;
+}
+#mail { 
+    margin: 13px 58px;
+}
+#pass1 { 
+    margin: 13px 83px;
+}
+#pass2 { 
+    margin: 13px 27px;
+}
+#submit{
+    margin: 0px 86px;
+}
+#age-error {
+    color: red;
+}
+#name-error {
+    color: red;
+}
+#mail-error {
+    color: red;
+}
+#pass1-error {
+    color: red;
+}
+#pass2-error {
+    color: red;
+}

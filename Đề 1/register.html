@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí tài khoản</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="/CSS/Style.css">
+</head>
+<body>
+    <div id="Container">
+        <img id="logo" src="/images/logo.png" alt="Logo">
+        <div id="menu">
+                <a class="page1" href="/Index.html">Trang chủ</a>
+                <a class=" page22" href="/register.html">Đăng ký tài khoản</a>
+        </div>
+        <div id="form">
+            <h2>Form đăng ký tài khoản</h2>
+       <form id="form-info">
+        Họ Tên:
+        <input type="text" name="fullname" id="name">
+        <br>
+        Tuổi:
+        <input type="text" name="age" id="age">
+        <br>
+        Địa chỉ email:
+        <input type="text" name="mail" id='mail'>
+        <br>
+        Mật khẩu:
+        <input type="text" name="password1" id='pass1'>
+        <br>
+        Nhập lại mật khẩu:
+        <input type="text" name="password2" id='pass2'>
+        <br>
+        <div id="submit">
+            <input type="submit" value="Gửi thông tin">
+            <input type="reset" value="Xóa thông tin">
+        </div>
+
+        </form>
+        </div>
+        
+        <div id="footer">
+            <h4>Bản quyền thuộc về ITplus Academy</h4>
+        </div>
+    </div>
+    <script type="text/Javascript">
+        $(document).ready(function(){
+            var obj_validate = {
+             rules: {
+                fullname: {
+                    required: true,
+                    minlength:3,
+
+                },
+                age:{
+                    required: true,
+                    number: true,
+                    max:127
+                },
+                mail:{
+                    required:true,
+                    email:true
+                },
+                password1:{
+                    required: true,
+                    
+                    
+                },
+                password2:{
+                    required: true,
+                    equalTo: "#pass1"
+                    
+                    
+                }
+                
+        
+             },
+             messages:{
+                fullname:{
+                    required:'Phải nhập tên!',
+                    minlength:'Tên >= 3 ký tự!'
+
+                },
+                age:{
+                    required:'Phải nhập tuổi!',
+                    number:'Tuổi phải là số!'
+                    
+                },
+                mail:{
+                    required:'Phải nhập email!',
+                    email:'Phải nhập dạng email'
+
+                    
+                },
+                password1:{
+                    required:'Phải nhập mật khẩu!'
+                    
+                },
+                password2:{
+                    required:'Phải nhập lại mật khẩu!',
+                    equalTo:'Mật khẩu nhập lại chưa khớp!'
+                    
+                }
+            }
+
+           
+            };
+            //Gọi thư viện jquery validate trên obj form
+            $('#form-info').validate(obj_validate);
+            
+            
+        })
+       
+    </script>
+</body>
+</html>
